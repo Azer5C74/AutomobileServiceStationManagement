@@ -12,6 +12,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
     PreparedStatement pst = null;
     ResultSet rs = null;
     int i_no = 0;
+    int amani= 12;
 
     public AddCustomer() {
 
