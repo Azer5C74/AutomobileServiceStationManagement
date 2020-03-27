@@ -13,7 +13,7 @@ public class ConnectionProvider {
 	static {
 		try {
 			prop = new Properties();
-			prop.load(new FileInputStream("C:\\Users\\Sheva-Laptop\\Desktop\\AutomobileServiceStationManagement-master\\src\\db.properties"));
+			prop.load(new FileInputStream("C:\\Users\\Sheva-Laptop\\Desktop\\AutomobileServiceStationManagement\\src\\db.properties"));
 		} catch (Exception e) {
 			System.out.println(e);
 		}

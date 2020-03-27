@@ -94,7 +94,7 @@ public class Homepage extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton3.setText("Vendor Record");
+        jButton3.setText("Liste d'employés");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -102,7 +102,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton6.setText("Vehicle Record");
+        jButton6.setText("Liste des véhicules");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -110,7 +110,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton5.setText("Category");
+        jButton5.setText("Catégorie de service");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -118,7 +118,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton8.setText("Category Record");
+        jButton8.setText("Liste des Services");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -126,7 +126,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton9.setText("Inventory Records");
+        jButton9.setText("Liste d'inventaire");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -134,7 +134,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         btnAddCust.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnAddCust.setText("Add Customer");
+        btnAddCust.setText("Ajouter client");
         btnAddCust.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddCustActionPerformed(evt);
@@ -142,7 +142,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton2.setText("Log Out");
+        jButton2.setText("Se déconnecter");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -150,7 +150,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton4.setText("Add Vehicle");
+        jButton4.setText("Ajouter véhicule");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -158,7 +158,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton7.setText("Add Vendor");
+        jButton7.setText("Ajouter Employé");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -166,7 +166,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         btnPendingbills.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnPendingbills.setText("Pending Bills");
+        btnPendingbills.setText("Factures en attente");
         btnPendingbills.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPendingbillsActionPerformed(evt);
@@ -174,7 +174,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         btnBillings.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnBillings.setText("Billing");
+        btnBillings.setText("Factorisation");
         btnBillings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBillingsActionPerformed(evt);
@@ -182,7 +182,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         btnViewAllBills.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btnViewAllBills.setText("View All Bills");
+        btnViewAllBills.setText("Consulter toutes les factures");
         btnViewAllBills.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewAllBillsActionPerformed(evt);
@@ -190,7 +190,7 @@ public class Homepage extends javax.swing.JFrame {
         });
 
         AddInventory.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        AddInventory.setText("Add Inventory");
+        AddInventory.setText("Ajouter un inventaire");
         AddInventory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddInventoryActionPerformed(evt);
@@ -212,7 +212,7 @@ public class Homepage extends javax.swing.JFrame {
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton8)
+                        .addComponent(jButton8,javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnPendingbills, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
