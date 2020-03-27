@@ -146,7 +146,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
         jLabel11.setBackground(new java.awt.Color(0, 0, 0));
         jLabel11.setFont(new java.awt.Font("Corbel", 1, 36)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("ADD CUSTOMER DETAILS");
+        jLabel11.setText("Ajouter détails du client");
         jLabel11.setName("jLabel11"); // NOI18N
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
@@ -175,7 +175,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Customer Name");
+        jLabel6.setText("Nom du client");
         jLabel6.setName("jLabel6"); // NOI18N
 
         id.setBackground(new java.awt.Color(255, 255, 153));
@@ -194,7 +194,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
         jLabel1.setBackground(new java.awt.Color(0, 1, 0));
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Customer ID");
+        jLabel1.setText("ID du client");
         jLabel1.setName("jLabel1"); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -238,7 +238,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Customer ADD1");
+        jLabel2.setText("Ville de résidence");
         jLabel2.setName("jLabel2"); // NOI18N
 
         add2.setName("add2"); // NOI18N
@@ -257,12 +257,12 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel3.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Customer ADD2");
+        jLabel3.setText("Cité");
         jLabel3.setName("jLabel3"); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Customer ADD3");
+        jLabel4.setText("Rue");
         jLabel4.setName("jLabel4"); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(0, 204, 204));
@@ -277,7 +277,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel10.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Customer Email-ID");
+        jLabel10.setText("Email du client");
         jLabel10.setName("jLabel10"); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -363,12 +363,12 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel8.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Customer Tin_No");
+        jLabel8.setText("Num Tim du client");
         jLabel8.setName("jLabel8"); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Customer Stex_No");
+        jLabel9.setText("Num_Stex du client");
         jLabel9.setName("jLabel9"); // NOI18N
 
         cst.setName("cst"); // NOI18N
@@ -392,19 +392,19 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Customer CST_No");
+        jLabel5.setText("Num_CST du client");
         jLabel5.setName("jLabel5"); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Customer Tel_No");
+        jLabel7.setText("Numéro du téléphone");
         jLabel7.setName("jLabel7"); // NOI18N
 
         jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setName("jPanel5"); // NOI18N
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        exit.setText("EXIT");
+        exit.setText("Quitter");
         exit.setName("exit"); // NOI18N
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -413,7 +413,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
         });
 
         save.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        save.setText("SAVE");
+        save.setText("Sauvegarder");
         save.setName("save"); // NOI18N
         save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -578,7 +578,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
             save.setEnabled(true);
             pst.executeUpdate();
 
-            JOptionPane.showMessageDialog(null, "Record Inserted Sucessfully....");
+            JOptionPane.showMessageDialog(null, "inséré avec succès....");
 
             id.setText("");
             name.setText("");

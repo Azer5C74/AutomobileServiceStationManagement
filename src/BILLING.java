@@ -5,8 +5,7 @@ import java.text.DateFormat;
 import java.util.Vector;
 import java.util.Date;
 import java.util.logging.Level;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.util.logging.Logger;
 
@@ -178,7 +177,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         jLabel1.setName("jLabel1"); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setText("bill no");
+        jLabel2.setText("Num Facture");
         jLabel2.setName("jLabel2"); // NOI18N
 
         bn.setBackground(new java.awt.Color(255, 255, 204));
@@ -189,8 +188,8 @@ public class BILLING extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel3.setText("cust no");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("Num Client");
         jLabel3.setName("jLabel3"); // NOI18N
 
         cno.setBackground(new java.awt.Color(255, 255, 204));
@@ -203,18 +202,18 @@ public class BILLING extends javax.swing.JInternalFrame {
         datetxt.setName("datetxt"); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel5.setText("bill to");
+        jLabel5.setText("pour le client");
         jLabel5.setName("jLabel5"); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setText("cst no");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("Num Cst");
         jLabel6.setName("jLabel6"); // NOI18N
 
         cstno.setBackground(new java.awt.Color(255, 255, 204));
         cstno.setName("cstno"); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel7.setText("tin no");
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("CIN");
         jLabel7.setName("jLabel7"); // NOI18N
 
         tinno.setBackground(new java.awt.Color(255, 255, 204));
@@ -233,7 +232,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel9.setText("purchase order date");
+        jLabel9.setText("Date d'ordre achat");
         jLabel9.setName("jLabel9"); // NOI18N
 
         pd.setName("pd"); // NOI18N
@@ -247,21 +246,21 @@ public class BILLING extends javax.swing.JInternalFrame {
         jPanel1.setName("jPanel1"); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("p no");
+        jLabel10.setText("Num prd");
         jLabel10.setName("jLabel10"); // NOI18N
 
         pno.setBackground(new java.awt.Color(255, 255, 204));
         pno.setName("pno"); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setText("product");
+        jLabel11.setText("produit");
         jLabel11.setName("jLabel11"); // NOI18N
 
         pname.setBackground(new java.awt.Color(255, 255, 204));
         pname.setName("pname"); // NOI18N
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("Warranty");
+        jLabel12.setText("Garantie");
         jLabel12.setName("jLabel12"); // NOI18N
 
         txtWarranty.setBackground(new java.awt.Color(255, 255, 204));
@@ -273,11 +272,11 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setText("serial no");
+        jLabel13.setText("Num serial");
         jLabel13.setName("jLabel13"); // NOI18N
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setText("Total Avlable");
+        jLabel14.setText("Total Disponible");
         jLabel14.setName("jLabel14"); // NOI18N
 
         srno.setName("srno"); // NOI18N
@@ -296,15 +295,15 @@ public class BILLING extends javax.swing.JInternalFrame {
         txtunit.setName("txtunit"); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("ratio");
+        jLabel15.setText("Rapport");
         jLabel15.setName("jLabel15"); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel16.setText("Sales Price");
+        jLabel16.setText("Prix des ventes");
         jLabel16.setName("jLabel16"); // NOI18N
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel17.setText("quantity");
+        jLabel17.setText("Quantité");
         jLabel17.setName("jLabel17"); // NOI18N
 
         ratio.setBackground(new java.awt.Color(255, 255, 204));
@@ -327,8 +326,8 @@ public class BILLING extends javax.swing.JInternalFrame {
         total.setBackground(new java.awt.Color(255, 204, 255));
         total.setName("total"); // NOI18N
 
-        add.setFont(new java.awt.Font("SimHei", 0, 24)); // NOI18N
-        add.setText("ADD");
+        add.setFont(new java.awt.Font("SimHei", 0, 18)); // NOI18N
+        add.setText("Ajouter");
         add.setName("add"); // NOI18N
         add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -458,8 +457,8 @@ public class BILLING extends javax.swing.JInternalFrame {
 
         jPanel3.setName("jPanel3"); // NOI18N
 
-        remove.setFont(new java.awt.Font("SimHei", 0, 14)); // NOI18N
-        remove.setText("REMOVE");
+        remove.setFont(new java.awt.Font("SimHei", 0, 12)); // NOI18N
+        remove.setText("Supprimer");
         remove.setName("remove"); // NOI18N
         remove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -468,7 +467,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel20.setText("SUB TOTAL");
+        jLabel20.setText("Sous Total");
         jLabel20.setName("jLabel20"); // NOI18N
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -512,7 +511,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         jScrollPane2.setViewportView(jTable1);
 
         save.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        save.setText("SAVE");
+        save.setText("Sauvegarder");
         save.setName("save"); // NOI18N
         save.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -526,7 +525,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton5.setText("NEW");
+        jButton5.setText("Nouveau");
         jButton5.setName("jButton5"); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -535,7 +534,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton6.setText("EXIT");
+        jButton6.setText("Quitter");
         jButton6.setName("jButton6"); // NOI18N
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -605,7 +604,7 @@ public class BILLING extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        billto.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-SELECT CUSTOMER-" }));
+        billto.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-Choix du client-" }));
         billto.setName("billto"); // NOI18N
         billto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -627,11 +626,11 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel22.setText("Vehicle  No");
+        jLabel22.setText("Num vehicule");
         jLabel22.setName("jLabel22"); // NOI18N
 
         jLabel19.setFont(new java.awt.Font("Pristina", 0, 18)); // NOI18N
-        jLabel19.setText("SEARCH ");
+        jLabel19.setText("Recherche ");
         jLabel19.setName("jLabel19"); // NOI18N
 
         search.setName("search"); // NOI18N
@@ -807,7 +806,7 @@ private void srnoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_srn
         }
     }
     if (f == 1) {
-        JOptionPane.showMessageDialog(null, "character not allowed");
+        JOptionPane.showMessageDialog(null, "Caractère non autorisé ");
         srno.setText(null);
     }
 
@@ -884,7 +883,7 @@ private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:ev
 
         pst.executeUpdate();
 
-        JOptionPane.showMessageDialog(null, "Record Inserted Sucessfully....");
+        JOptionPane.showMessageDialog(null, "Inséré avec succès");
 
         pst = con.prepareStatement("DELETE  from dummy");
         pst.executeUpdate();

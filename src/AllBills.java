@@ -218,7 +218,7 @@ public class AllBills extends javax.swing.JPanel {
 
         
     }catch(Exception e){
-    	     System.out.println("no such record");
+    	     System.out.println("pas trouvée");
     	model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found",});
         System.out.println(e.getMessage());
     }
