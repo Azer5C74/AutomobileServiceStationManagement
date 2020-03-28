@@ -60,7 +60,7 @@ public class Homepage extends javax.swing.JFrame {
 
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+        setResizable(true);
 
         jPanel1.setBackground(new java.awt.Color(173, 173, 133));
 
