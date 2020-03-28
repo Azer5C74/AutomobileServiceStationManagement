@@ -33,17 +33,17 @@ public class Vehicle extends javax.swing.JInternalFrame {
         jTextField3.setVisible(false);
         jTextField9.setVisible(false);
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
             d=ft.format(dnow.getTime());
             jTextField7.setText(d);
             String sixmonth="";
                                    
             if((dnow.getMonth()+1)<7)
-            sixmonth=(dnow.getYear()+1900)+"."+(dnow.getMonth()+1-6)+"."+dnow.getDate();
+            sixmonth=(dnow.getYear()+1900)+""+(dnow.getMonth()+1-6)+"-"+dnow.getDate();
             else if((dnow.getMonth()+1)==8 && dnow.getDate()>28)
-                sixmonth=(dnow.getYear()+1900+1)+"."+(dnow.getMonth()-12+8)+".1";
+                sixmonth=(dnow.getYear()+1900+1)+"-"+(dnow.getMonth()-12+8)+"-1";
             else
-                sixmonth=(dnow.getYear()+1900+1)+"."+(dnow.getMonth()-12+7)+"."+dnow.getDate();
+                sixmonth=(dnow.getYear()+1900+1)+"-"+(dnow.getMonth()-12+7)+"-"+dnow.getDate();
   
     
             duedate=sixmonth;
@@ -162,6 +162,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
                      
                  else
                  {
+                     System.out.println(duedate);
                  PreparedStatement ps=con.prepareStatement("insert into addnewvehicle values(?,?,?,?,?,?,?,?,?,?,?,?)");
                  ps.setString(1, vehicle);
                  ps.setString(2, regno);
@@ -174,7 +175,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
                  ps.setString(9, year);
                  ps.setString(10, model);
                  ps.setString(11, date);
-                 ps.setString(12, duedate);
+                 ps.setString(12, duedate);//??
                  ps.execute();
                  System.out.println("KKKKKKKKKKKKK"+ps);
                  javax.swing.JOptionPane.showMessageDialog(null, "Véhicule ajoutée avec succé...");
@@ -398,7 +399,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             }
         });
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Servicing", "Mechanical job", "Denting painting", "Break down", "Extra" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Service", "Mechanique", "tole et peinture", "pane", "autre" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox3ActionPerformed(evt);

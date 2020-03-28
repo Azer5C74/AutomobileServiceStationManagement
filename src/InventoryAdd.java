@@ -219,7 +219,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         combCategory.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Engine oil", "Oil Filter", "Air Filter", "Diesel Filter", "Break Parts", "Spark Plug", "Head Light Bulb", "Break shol", "Gear oil", "Break oil", "Power Steering", "Wiper", "Horn", "Belts" }));
 
         btnShowAll.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnShowAll.setText("showAll");
+        btnShowAll.setText("voir tout");
         btnShowAll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnShowAllActionPerformed(evt);
@@ -227,7 +227,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         });
 
         btnClear.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnClear.setText("Clear");
+        btnClear.setText("Annuler");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClearActionPerformed(evt);
