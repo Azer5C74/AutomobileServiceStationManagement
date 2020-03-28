@@ -19,7 +19,7 @@ public class VendorReport extends javax.swing.JPanel {
     String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Vendor ID","Name","Contact no","Date","Parts"};
+    String col[] = {"ID vendeur","Nom","Contact num","Date rejoindre","Taches"};
   //  String col[] = {"Vehicle no","Reg no","Name","Contact no","Category","Requirement","Location","kilometers","Year","Model","Date","Due Date"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
@@ -130,11 +130,11 @@ try{
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Vendor Report");
+        jLabel1.setText("Rapport Vendeur");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 255)));
 
-        jButton3.setText("Print Vendor Details");
+        jButton3.setText("Imprimer les détails de Vendeur");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -144,23 +144,23 @@ try{
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Date");
 
-        jButton2.setText("Hide All Vendors");
+        jButton2.setText("Masquer tout les vendeurs");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton1.setText("View All Vendors");
+        jButton1.setText("Voir tout les vendeurs");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Search Vendors By Parts");
+        jLabel3.setText("Chercher vendeur par tache");
 
-        jButton4.setText("View");
+        jButton4.setText("Voir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

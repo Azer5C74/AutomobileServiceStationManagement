@@ -19,7 +19,7 @@ public class AllBills extends javax.swing.JPanel {
     String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Bill_no","Cust_no","Cust_name","Vehicle No","Po_date","Cst_no","Tin_no","Flddate","Sub_total","Tax_per","Tax","Total"};
+    String col[] = {"Num Facture","Num Client","Nom Client","Num véhicule","date","Num client","Sous total","Tax","Total"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;
@@ -103,16 +103,16 @@ public class AllBills extends javax.swing.JPanel {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 255)));
 
-        jButton2.setText("All Report");
+        jButton2.setText("Tout rapport");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Search Bill Number");
+        jLabel3.setText("Trouver facture par num");
 
-        jButton4.setText("View");
+        jButton4.setText("Voir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

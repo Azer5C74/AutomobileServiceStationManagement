@@ -36,10 +36,10 @@ int ctr;
         jPanel1.setBackground(new java.awt.Color(0, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Login page");
+        jLabel1.setText("Se connecter");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Username");
+        jLabel2.setText("Login");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,11 +48,11 @@ int ctr;
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Password");
+        jLabel3.setText("Mot de passe");
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton1.setText("Login");
+        jButton1.setText("Se connecter");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -68,7 +68,7 @@ int ctr;
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton2.setText("Exit");
+        jButton2.setText("Quitter");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -154,7 +154,7 @@ int ctr;
     if (Name.equals("admin") || Password.equals("admin"))
     {
     //javax.swing.JOptionPane.showMessageDialog(rootPane, "login Succesfully. !!!");
-      javax.swing.JOptionPane.showMessageDialog(null, "USER NAME OR PASSWORD IS VALID");
+      javax.swing.JOptionPane.showMessageDialog(null, "Login ou mot de passe est correct.");
       Homepage hp=new Homepage();
       hp.setVisible(true);
       this.hide();
@@ -164,18 +164,17 @@ int ctr;
  }
 else if(Name.equals("")||Password.equals(""))
             {
-                javax.swing.JOptionPane.showMessageDialog(null, "ENTER USER NAME OR PASSWORD");
-                //javax.swing.JOptionPane.showMessageDialog(rootPane, "ENTER USER NAME OR PASSWORD");
+                javax.swing.JOptionPane.showMessageDialog(null, "Entrée Vide !!");
             }
             else if(ctr<3)
             {
                 jTextField1.setText(null);
                 jPasswordField1.setText(null);
-                javax.swing.JOptionPane.showMessageDialog(null, "INVALID USER NAME OR PASSWORD PLEASE TRY AGAIN");
+                javax.swing.JOptionPane.showMessageDialog(null, "Login ou mot de passe faux");
             }
             else
             {
-                javax.swing.JOptionPane.showMessageDialog(null, "UNATHORISED ACCSESS. ABORTING....");
+                javax.swing.JOptionPane.showMessageDialog(null, "Accès inautorisé...");
                 System.exit(0);
                 
             }
