@@ -132,10 +132,10 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("Inventory Master");
+        jLabel3.setText("Inventaire");
 
         btn_add.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btn_add.setText("Add");
+        btn_add.setText("Ajouter");
         btn_add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_addActionPerformed(evt);
@@ -143,31 +143,31 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setText("Part ID");
+        jLabel8.setText("ID");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setText("Part Cost");
+        jLabel9.setText("Cout");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Part Sale Cost:-");
+        jLabel11.setText("Cout de vente:-");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel10.setText("Part Name");
+        jLabel10.setText("Nom");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("Purchase Date:-");
+        jLabel1.setText("Date d'achat:-");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Qty");
+        jLabel12.setText("Quantité");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setText("Warranty");
+        jLabel13.setText("Garantie");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel14.setText("Category");
+        jLabel14.setText("Categorie");
 
         btnEdit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnEdit.setText("Edit");
+        btnEdit.setText("Modifier");
         btnEdit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEditActionPerformed(evt);
@@ -175,7 +175,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         });
 
         btnDelete.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnDelete.setText("Delete");
+        btnDelete.setText("Supprimer");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
@@ -183,7 +183,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
         });
 
         btn_Search.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btn_Search.setText("Search");
+        btn_Search.setText("Chercher");
         btn_Search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_SearchActionPerformed(evt);
@@ -195,7 +195,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "ID", "partname", "partcost", "partsalecost", "qty", "purchaseDate", "warranty", "Category"
+                "ID", "Nom", "Cout", "cout de vente", "quantité", "Date d'achat", "Garantie", "Categorie"
             }
         ) {
             Class[] types = new Class [] {

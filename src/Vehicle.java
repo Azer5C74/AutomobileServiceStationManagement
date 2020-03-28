@@ -287,13 +287,13 @@ public class Vehicle extends javax.swing.JInternalFrame {
         jTextField11 = new javax.swing.JTextField();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Add Vehicle");
+        jLabel1.setText("Ajouter Véhicule");
 
-        jLabel2.setText("Registration No.");
+        jLabel2.setText("Num registrement");
 
-        jLabel3.setText("Vehicle no");
+        jLabel3.setText("Num Véhicule");
 
-        jLabel4.setText("Name");
+        jLabel4.setText("Nom");
 
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -307,7 +307,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel5.setText("Location");
+        jLabel5.setText("Localisation");
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,9 +327,9 @@ public class Vehicle extends javax.swing.JInternalFrame {
 
         jLabel7.setText("Kilometers");
 
-        jLabel8.setText("Category");
+        jLabel8.setText("Categorie");
 
-        jLabel9.setText("Year");
+        jLabel9.setText("Année");
 
         jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -337,7 +337,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel10.setText("Requirement");
+        jLabel10.setText("Exigence");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -346,7 +346,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         jLabel11.setText("Date");
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Reset");
+        jButton1.setText("Annuler");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -380,7 +380,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel13.setText("Contact Number");
+        jLabel13.setText("Numéro Contact");
 
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -406,7 +406,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         });
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setText("Submit");
+        jButton3.setText("Envoyer");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);

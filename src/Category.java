@@ -560,7 +560,7 @@ public void dataStored()
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton2.setText("Selected Item");
+        jButton2.setText("Selectionner");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
