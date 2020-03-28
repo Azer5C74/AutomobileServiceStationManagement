@@ -61,11 +61,11 @@ public class Homepage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(173, 173, 133));
 
         jLabel1.setFont(new java.awt.Font("Viner Hand ITC", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("SERVICE AUTOMOBILE");
+        jLabel1.setForeground(new java.awt.Color(198, 140, 83));
+        jLabel1.setText("SERVICE AUTO GENERIQUE");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Date");
@@ -92,7 +92,7 @@ public class Homepage extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(173, 173, 133));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -254,7 +254,8 @@ public class Homepage extends javax.swing.JFrame {
                 .addComponent(jButton2))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
+
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
