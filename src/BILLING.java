@@ -43,21 +43,21 @@ public class BILLING extends javax.swing.JInternalFrame {
 //purchaseDate,,Category
             header = new Vector<String>();
             header.add("ID");
-            header.add("partname");
-            header.add("partcost");
-            header.add("partsalecost");
-            header.add("qty");
-            header.add("warranty");
+            header.add("nom de pièce");
+            header.add("coût de pièce");
+            header.add("coût de vente");
+            header.add("qté");
+            header.add("garantie");
 
             DummyData dce1 = new DummyData("select * from dummy");
             data1 = dce1.getData();
             header1 = new Vector<String>();
-            header1.add("item no");
-            header1.add("item Name");
-            header1.add("make");
-            header1.add("srno");
-            header1.add("unitprice");
-            header1.add("quantity");
+            header1.add("num article");
+            header1.add("nom article");
+            //header1.add("utilisé");
+            //header1.add("srno");
+            header1.add("prix unitaire");
+            header1.add("quantité");
             header1.add("total");
 
             initComponents();
@@ -173,7 +173,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Snap ITC", 0, 24)); // NOI18N
-        jLabel1.setText("BILLING");
+        jLabel1.setText("Factorisation");
         jLabel1.setName("jLabel1"); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

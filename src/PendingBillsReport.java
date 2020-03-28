@@ -19,7 +19,7 @@ public class PendingBillsReport extends javax.swing.JPanel {
     String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Vehicle no","Reg no","Name","Contact no","Category","Requirement","Location","kilometers","Year","Model","Date","Due Date"};
+    String col[] = {"Num Vehicule","Matricule","possédeur","Contact num","Catégorie","Localisation","kilomètres","Année","Modèle","Date","date d'échéance"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;
@@ -101,11 +101,11 @@ public class PendingBillsReport extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Pending Bills Report");
+        jLabel1.setText("Facture en Attente");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 255)));
 
-        jButton3.setText("Search");
+        jButton3.setText("Imprimer");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -115,16 +115,16 @@ public class PendingBillsReport extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Date");
 
-        jButton2.setText("All Report");
+        jButton2.setText("Voir Tout");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Search Vehicle Number");
+        jLabel3.setText("Recherche par Matricule");
 
-        jButton4.setText("View");
+        jButton4.setText("Voir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -222,7 +222,7 @@ public class PendingBillsReport extends javax.swing.JPanel {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
     	JOptionPane.showMessageDialog(null, "Printing report...");
-    	
+
 
     	JOptionPane.showMessageDialog(null, "Error : Configure Printer First ");
        System.out.println("Connect to Printer");
