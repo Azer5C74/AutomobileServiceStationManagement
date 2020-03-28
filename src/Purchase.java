@@ -1,5 +1,5 @@
  
-
+//traduction faite
 import java.awt.TextArea;
 import java.sql.Connection;
 import java.sql.Date;
@@ -25,7 +25,7 @@ public class Purchase extends javax.swing.JInternalFrame {
     public Purchase() {
         initComponents();   
  java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             jTextField1.setText(d);
     }
@@ -50,12 +50,12 @@ public void dataStored()
         ps.setString(5, d);
         int x=ps.executeUpdate();
         if(x==1)
-            javax.swing.JOptionPane.showMessageDialog(rootPane, "Data inserted Succesfully. !!!");
+            javax.swing.JOptionPane.showMessageDialog(rootPane, "Donnée inserée avec succé !!!");
         
          }   catch(Exception e)
         {
             System.out.println("Error:"+e);
-            JOptionPane.showMessageDialog(null, "Enter  Cost");
+            JOptionPane.showMessageDialog(null, "Entrez le coût");
             
         }
 }

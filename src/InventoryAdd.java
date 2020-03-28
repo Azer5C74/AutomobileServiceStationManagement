@@ -36,7 +36,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
     public InventoryAdd() {
         initComponents();
         java.util.Date dnow = new java.util.Date();
-        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy/MM/dd");
         d = ft.format(dnow.getTime());
         txtpurchageDate.setText(d);
     }
@@ -67,7 +67,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
 
             int x = ps.executeUpdate();
             if (x == 1) {
-                javax.swing.JOptionPane.showMessageDialog(rootPane, "Data inserted Succesfully. !!!");
+                javax.swing.JOptionPane.showMessageDialog(rootPane, "Donnée insérée avec succé !!!");
             }
 
         } catch (Exception e) {
@@ -384,7 +384,7 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
 
             int x = ps.executeUpdate();
             if (x == 1) {
-                javax.swing.JOptionPane.showMessageDialog(rootPane, "Data Updated Succesfully. !!!");
+                javax.swing.JOptionPane.showMessageDialog(rootPane, "Donnée insérée avec succé. !!!");
             }
 
         } catch (Exception e) {
@@ -405,10 +405,10 @@ public class InventoryAdd extends javax.swing.JInternalFrame {
 
             int x = ps.executeUpdate();
             if (x == 1) {
-                javax.swing.JOptionPane.showMessageDialog(rootPane, "Data Delete Succesfully. !!!");
+                javax.swing.JOptionPane.showMessageDialog(rootPane, "Donnée supprimée avec succé !!!");
                 clear();
             } else {
-                javax.swing.JOptionPane.showMessageDialog(rootPane, "Failed. !!!");
+                javax.swing.JOptionPane.showMessageDialog(rootPane, "echec. !!!");
             }
 
         } catch (Exception e) {

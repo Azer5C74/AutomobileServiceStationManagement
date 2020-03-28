@@ -773,8 +773,8 @@ private void telFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_telF
     String str = "";
 
     str = tel.getText();
-    if (str.length() < 6 || str.length() > 10) {
-        JOptionPane.showMessageDialog(this, "phone no must be 6 to 10 digits");
+    if (str.length() != 8) {
+        JOptionPane.showMessageDialog(this, "numéro téléphone doit etre composé de 8 chiffres");
         tel.setText("");
     }
 }//GEN-LAST:event_telFocusLost

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
  
-
+//traduction faite
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -22,7 +22,7 @@ public class CategoryReport extends javax.swing.JInternalFrame {
      */ String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Vehicle no","Car type","Work type","Item"};
+    String col[] = {"Num véhicule","Type véhicule","Type de travail","Article"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;

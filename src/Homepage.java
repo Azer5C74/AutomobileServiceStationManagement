@@ -22,9 +22,11 @@ public class Homepage extends javax.swing.JFrame {
     public Homepage() {
         initComponents();
         Date dnow= new Date();
-            SimpleDateFormat ft= new SimpleDateFormat("dd.MM.yyyy");
+            SimpleDateFormat ft= new SimpleDateFormat("dd/MM/yyyy");
             d=ft.format(dnow.getTime());
             jLabel4.setText(d);
+
+
     }
 
     /**
@@ -63,7 +65,7 @@ public class Homepage extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Viner Hand ITC", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel1.setText("AVS MOTORS");
+        jLabel1.setText("SERVICE AUTOMOBILE");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Date");
@@ -315,7 +317,8 @@ public class Homepage extends javax.swing.JFrame {
         c.setSize(jPanel3.getSize());
         jPanel3.add(c);
         c.setVisible(true); 
-// TODO add your handling code here:
+// TODO add your handling code here:s
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed

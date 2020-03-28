@@ -1,5 +1,5 @@
  
-
+//traduction faite
 import java.awt.event.KeyEvent;
 import java.sql.*;
 //import java.io.File;
@@ -33,7 +33,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         jTextField3.setVisible(false);
         jTextField9.setVisible(false);
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             jTextField7.setText(d);
             String sixmonth="";
@@ -56,7 +56,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         {
         if(regis.equals(""))
         {
-                JOptionPane.showMessageDialog(null, "Enter Vehicle Number");
+                JOptionPane.showMessageDialog(null, "Enter le numéro de véhicule");
         }
         else
         {
@@ -153,11 +153,11 @@ public class Vehicle extends javax.swing.JInternalFrame {
                  con=ConnectionProvider.getConnection();
                  if(name.equals("")||model.equals("")||vehicle.equals("")||year.equals("")||location.equals("")||regno.equals("")||date.equals("")||kilometer.equals("")||contact.equals("")||requ.equals(""))
                  {
-                     javax.swing.JOptionPane.showMessageDialog(null,"(*) These are compulsory to fill.");
+                     javax.swing.JOptionPane.showMessageDialog(null,"(*) Champs obligatoire .");
                  }
                 else if(cate.equals("Select"))
                          {
-                          javax.swing.JOptionPane.showMessageDialog(null,"Select your Category.");
+                          javax.swing.JOptionPane.showMessageDialog(null,"Selectionnez une catégorie .");
                          } 
                      
                  else
@@ -177,7 +177,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
                  ps.setString(12, duedate);
                  ps.execute();
                  System.out.println("KKKKKKKKKKKKK"+ps);
-                 javax.swing.JOptionPane.showMessageDialog(null, "Your Data Add is  Successfully...");
+                 javax.swing.JOptionPane.showMessageDialog(null, "Véhicule ajoutée avec succé...");
                  
                  jTextField1.setText(null);
                  jTextField2.setText(null);
@@ -197,7 +197,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         catch(Exception e)
         {
             System.err.println("Error" + e.getMessage());
-            javax.swing.JOptionPane.showMessageDialog(null, "Your Vehicle No. is Duplicate Entry '"+ vehicle +"'");
+            javax.swing.JOptionPane.showMessageDialog(null, "Numéro de véhicule dupliqué '"+ vehicle +"'");
             reset();
             jTextField10.setText(null);
             
@@ -215,16 +215,16 @@ public class Vehicle extends javax.swing.JInternalFrame {
         {
         if(vehicle.equals(""))
         {
-                JOptionPane.showMessageDialog(null, "Enter Vehicle Number");
+                JOptionPane.showMessageDialog(null, "Entrer numéro de véhicule");
         }
         
         else if(cate.equals("Select"))
            {
-           javax.swing.JOptionPane.showMessageDialog(null,"Select your Category.");
+           javax.swing.JOptionPane.showMessageDialog(null,"Selectionner une catégorie.");
            }
         else if(name.equals("")||kilometer.equals("")||contact.equals("")||requ.equals(""))
                  {
-                     javax.swing.JOptionPane.showMessageDialog(null,"These are compulsory to fill.");
+                     javax.swing.JOptionPane.showMessageDialog(null,"Champs obligatoire à remplir.");
                  }
         else
         {
@@ -238,7 +238,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         jTextField10.setText(null);
         reset();
         enable();
-        javax.swing.JOptionPane.showMessageDialog(null, "Your Data Save is  Successfully...");
+        javax.swing.JOptionPane.showMessageDialog(null, "Vehicule ajoutée avec succé...");
         }
         }
         catch(Exception e)
@@ -586,7 +586,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             else 
             {               
                 jTextField8.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "* Enter only numeric digit(0-9)");
+                javax.swing.JOptionPane.showMessageDialog(null, "* Entrez uniquement des chiffres numérique(0-9)");
                 //jLabel10.setText("* Enter only numeric digit(0-9)");
              }
         
@@ -610,7 +610,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             else 
             {               
                 jTextField4.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "* Enter only numeric digit(0-9)");
+                javax.swing.JOptionPane.showMessageDialog(null, "* Entrez uniquement des chiffres numérique(0-9)");
                 //jLabel10.setText("* Enter only numeric digit(0-9)");
              }
         // TODO add your handling code here:
@@ -643,7 +643,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
             else 
             {               
                 jTextField9.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "* Enter only numeric digit(0-9)");
+                javax.swing.JOptionPane.showMessageDialog(null, "* Entrez uniquement des chiffres numérique(0-9)");
                 //jLabel10.setText("* Enter only numeric digit(0-9)");
              }
         // TODO add your handling code here:
@@ -679,7 +679,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         else if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9')
             {
                 jTextField1.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "*Only Alphabet");
+                javax.swing.JOptionPane.showMessageDialog(null, "*uniquement de l'alphabet");
 
             }
         // TODO add your handling code here:
@@ -703,7 +703,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         else if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9')
             {
                 jTextField5.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "*Only Alphabet");
+                javax.swing.JOptionPane.showMessageDialog(null, "*uniquement de l'alphabet");
 
             }
         
@@ -728,7 +728,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
     str=jTextField10.getText();
     if(str.length()<8 || str.length()>10)
     {
-        JOptionPane.showMessageDialog(null,"Vehicle Number must be 8 to 10 Digits");
+        JOptionPane.showMessageDialog(null,"Numéro de véhicule doit etre entre 8 et 10");
         jTextField10.setText("");
         reset();
         
@@ -741,9 +741,9 @@ public class Vehicle extends javax.swing.JInternalFrame {
 
             String str="";
     str=jTextField11.getText();
-    if(str.length()<10 || str.length()>12)
+    if(str.length()!=8)
     {
-        JOptionPane.showMessageDialog(null,"Phone No must be 10 to 12 Digits");
+        JOptionPane.showMessageDialog(null,"Numéro de téléphone doit etre composé de 8 chiffres");
         jTextField11.setText("");
     }
     
@@ -757,7 +757,7 @@ public class Vehicle extends javax.swing.JInternalFrame {
         if(rs.next())
         {
            
-           JOptionPane.showMessageDialog(null, "Your Contactno is Duplicate='"+phon+"'");
+           JOptionPane.showMessageDialog(null, "Numéro de contact dupliqué='"+phon+"'");
            jTextField11.setText(null);
         }
         else

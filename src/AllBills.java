@@ -1,4 +1,4 @@
- 
+ //traduction faite
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -35,7 +35,7 @@ public class AllBills extends javax.swing.JPanel {
     public AllBills() {
         initComponents();
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             //jButton1.setText(d);
     
@@ -99,7 +99,7 @@ public class AllBills extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("All Bills Report");
+        jLabel1.setText("Tous Les Rapports Des Factures ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 255)));
 
@@ -213,13 +213,13 @@ public class AllBills extends javax.swing.JPanel {
                 }
     
          if(!rs.first())
-        	 model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found",});
+        	 model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé",});
          else System.out.println(" theek ");
 
         
     }catch(Exception e){
     	     System.out.println("pas trouvée");
-    	model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found",});
+    	model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé",});
         System.out.println(e.getMessage());
     }
         

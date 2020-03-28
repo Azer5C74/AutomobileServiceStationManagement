@@ -1,4 +1,4 @@
- 
+ //traduction faite
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +26,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         jPanel2.setVisible(false);
         jButton2.setVisible(false);
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             jTextField4.setText(d);
             int rowCount =1;
@@ -96,11 +96,11 @@ public class Vendor extends javax.swing.JInternalFrame {
         jLabel7 = new javax.swing.JLabel();
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("Add Vendor");
+        jLabel2.setText("Ajouter Vendeur");
 
-        jLabel1.setText("Vendor ID");
+        jLabel1.setText("ID Vendeur");
 
-        jLabel3.setText("Name");
+        jLabel3.setText("Nom");
 
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -108,7 +108,7 @@ public class Vendor extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel4.setText("Contact No.");
+        jLabel4.setText("Num Contact");
 
         jTextField3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -124,73 +124,73 @@ public class Vendor extends javax.swing.JInternalFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, java.awt.Color.lightGray));
         jPanel2.setName("Service"); // NOI18N
 
-        jCheckBox1.setText("Engine Oil");
+        jCheckBox1.setText("Huile Moteur");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setText("Oil Filter");
+        jCheckBox2.setText("Filtre à l'huile");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setText("Air Filter");
+        jCheckBox3.setText("Filtre d'air");
 
-        jCheckBox4.setText("Diesel Filter");
+        jCheckBox4.setText("Filtre à carburant");
         jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox4ActionPerformed(evt);
             }
         });
 
-        jCheckBox5.setText("Wiper");
+        jCheckBox5.setText("Essuie-glace");
 
-        jCheckBox6.setText("Break Parts");
+        jCheckBox6.setText("frein");
 
-        jCheckBox7.setText("Power Steering");
+        jCheckBox7.setText("Direction assistée");
 
-        jCheckBox8.setText("Gear oil");
+        jCheckBox8.setText("L'huile d'embrayage");
         jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox8ActionPerformed(evt);
             }
         });
 
-        jCheckBox9.setText("Break oil");
+        jCheckBox9.setText("Briser l'huile");
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox9ActionPerformed(evt);
             }
         });
 
-        jCheckBox10.setText("Break shol");
+        jCheckBox10.setText("Carrouserie");
         jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox10ActionPerformed(evt);
             }
         });
 
-        jCheckBox11.setText("Horn");
+        jCheckBox11.setText("klaxon");
 
         jCheckBox12.setText("Head Light Bulb");
 
-        jCheckBox13.setText("Spark Plug");
+        jCheckBox13.setText("Bougie d'allumage");
 
-        jCheckBox14.setText("Belts");
+        jCheckBox14.setText("ceintures");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Parts");
+        jLabel5.setText("pièces");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton2.setText("Selected Item");
+        jButton2.setText("Élément sélectionné");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -301,7 +301,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         jTextField4.setEnabled(false);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Submit");
+        jButton1.setText("Envoyer");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -310,7 +310,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton4.setText("Reset");
+        jButton4.setText("Annuler");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -436,7 +436,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         con=ConnectionProvider.getConnection();
         if(name.equals("")||mobile.equals(""))
         {
-            javax.swing.JOptionPane.showMessageDialog(null,"These are compulsory to fill.");
+            javax.swing.JOptionPane.showMessageDialog(null,"Champs obligatoire à remplir.");
         }
         else
         {
@@ -447,7 +447,7 @@ public class Vendor extends javax.swing.JInternalFrame {
             ps.setString(4, date);
             //ps.setString(5, item);
             ps.execute();
-            javax.swing.JOptionPane.showMessageDialog(null, "Your Data Add is Successfully...");
+            javax.swing.JOptionPane.showMessageDialog(null, "vendeur ajouté avec succé");
         //    jTextField5.setText(null);
             jTextField2.setText(null);
             jTextField3.setText(null);
@@ -461,7 +461,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         catch(Exception e)
         {
             System.err.println("Error" + e.getMessage());
-            javax.swing.JOptionPane.showMessageDialog(null,"Duplicate Entry '"+ id+"'");
+            javax.swing.JOptionPane.showMessageDialog(null,"id dupliqué '"+ id+"'");
         }
                 
         // TODO add your handling code here:
@@ -479,7 +479,7 @@ public class Vendor extends javax.swing.JInternalFrame {
             else 
             {               
                 jTextField3.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "Enter only numeric digit(0-9)");
+                javax.swing.JOptionPane.showMessageDialog(null, "Entrez uniquement des chiffres numérique(0-9)");
                 //jLabel10.setText("* Enter only numeric digit(0-9)");
              }
         // TODO add your handling code here:
@@ -501,9 +501,9 @@ public class Vendor extends javax.swing.JInternalFrame {
     private void jTextField3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusLost
     String str="";
     str=jTextField3.getText();
-    if(str.length()<10 || str.length()>12)
+    if(str.length()!=8)
     {
-        JOptionPane.showMessageDialog(null,"Phone No must be 10 to 12 Digits");
+        JOptionPane.showMessageDialog(null,"numéro doit etre composé de 8 chiffres");
         jTextField3.setText("");
     }
         String phon="";
@@ -516,7 +516,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         if(rs.next())
         {
            
-           JOptionPane.showMessageDialog(null, "Your Contactno is Duplicate='"+phon+"'");
+           JOptionPane.showMessageDialog(null, "numéro de contact dupliqué='"+phon+"'");
            jTextField3.setText(null);
         }
         else
@@ -575,7 +575,7 @@ public class Vendor extends javax.swing.JInternalFrame {
         else if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9')
             {
                 jTextField2.setEditable(false);
-                javax.swing.JOptionPane.showMessageDialog(null, "Only Alphabet");
+                javax.swing.JOptionPane.showMessageDialog(null, "doit etre alphabétique ");
 
             }
         

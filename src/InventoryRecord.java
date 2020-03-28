@@ -12,7 +12,7 @@ public class InventoryRecord extends javax.swing.JInternalFrame {
  String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"ID","partname","partcost","partsalecost","qty","purchaseDate","warranty","Category"};
+    String col[] = {"ID","Nom","Cout","Cout de vente","quantité","Date d'achat","Garantie","Categorie"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;

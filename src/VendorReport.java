@@ -1,4 +1,4 @@
- 
+//traduction faite
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -36,7 +36,7 @@ public class VendorReport extends javax.swing.JPanel {
     public VendorReport() {
         initComponents();
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             //jButton1.setText(d);
     

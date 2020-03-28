@@ -1,4 +1,4 @@
- 
+ //traduction faite
 import java.sql.Connection;
 import java.util.Date;
 import java.sql.ResultSet;
@@ -12,7 +12,7 @@ public class PartsRecord extends javax.swing.JInternalFrame {
  String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Work","Purchase cost","Salecost","Item","Date"};
+    String col[] = {"travail","Coût d'achat","Coût de vente","Article","Date"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;

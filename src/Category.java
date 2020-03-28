@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-
+//traduction faite
 import java.awt.TextArea;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,7 +38,7 @@ public class Category extends javax.swing.JInternalFrame {
         {
         if(regis.equals(""))
         {
-                JOptionPane.showMessageDialog(null, "Enter Vehicle Number");
+                JOptionPane.showMessageDialog(null, "Enter numéro de véhicule");
         }
         else
         {
@@ -96,16 +96,16 @@ public void dataStored()
      Connection con=null;
      if(Vehicleno.equals("")||Item.equals(""))
         {
-     javax.swing.JOptionPane.showMessageDialog(null,"(*) These are compulsory to fill.");       
+     javax.swing.JOptionPane.showMessageDialog(null,"(*) Champs obligatoire à remplir.");
         }
      else if(Model.equals("Select"))
      {
-                          javax.swing.JOptionPane.showMessageDialog(null,"Select your Model name.");
+                          javax.swing.JOptionPane.showMessageDialog(null,"Selectionnez notre modèle.");
                          } 
    
      else if(worktype.equals("Select"))
                          {
-                          javax.swing.JOptionPane.showMessageDialog(null,"Select your Work.");
+                          javax.swing.JOptionPane.showMessageDialog(null,"Selectionner votre besoin.");
                          } 
    else
      {
@@ -118,7 +118,7 @@ public void dataStored()
         ps.setString(3,worktype);
         ps.setString(4,Item);
         ps.executeUpdate();
-        javax.swing.JOptionPane.showMessageDialog(null, "Data inserted Succesfully. !!!");
+        javax.swing.JOptionPane.showMessageDialog(null, "Catégorie ajoutée avec succé. !!!");
         jTextArea1.setText(null);
         jTextField1.setText(null);
         jComboBox1.setSelectedItem("Select");
@@ -196,21 +196,21 @@ public void dataStored()
         jPanel1.setForeground(new java.awt.Color(51, 255, 255));
         jPanel1.setName("Service"); // NOI18N
 
-        jCheckBox1.setText("Engine Oil");
+        jCheckBox1.setText("Huile moteur");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
 
-        jCheckBox2.setText("Oil Filter");
+        jCheckBox2.setText("Filtre à huile");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
 
-        jCheckBox3.setText("Air Filter");
+        jCheckBox3.setText("Filtre à air");
         jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox3ActionPerformed(evt);
@@ -218,79 +218,79 @@ public void dataStored()
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel1.setText("Servicing Parts");
+        jLabel1.setText("Partie service");
 
-        jCheckBox4.setText("Diesel Filter");
+        jCheckBox4.setText("Filtre à carburant");
         jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox4ActionPerformed(evt);
             }
         });
 
-        jCheckBox5.setText("Wiper");
+        jCheckBox5.setText("Essuie-glace");
         jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox5ActionPerformed(evt);
             }
         });
 
-        jCheckBox6.setText("Break Parts");
+        jCheckBox6.setText("Pièce cassée");
         jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox6ActionPerformed(evt);
             }
         });
 
-        jCheckBox7.setText("Power Steering");
+        jCheckBox7.setText("Direction assistée");
         jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox7ActionPerformed(evt);
             }
         });
 
-        jCheckBox8.setText("Gear oil");
+        jCheckBox8.setText("Huile d'engrenages");
         jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox8ActionPerformed(evt);
             }
         });
 
-        jCheckBox9.setText("Break oil");
+        jCheckBox9.setText("Liquide de frein");
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox9ActionPerformed(evt);
             }
         });
 
-        jCheckBox10.setText("Break shol");
+        jCheckBox10.setText("carrosserie");
         jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox10ActionPerformed(evt);
             }
         });
 
-        jCheckBox11.setText("Horn");
+        jCheckBox11.setText("klaxon");
         jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox11ActionPerformed(evt);
             }
         });
 
-        jCheckBox12.setText("Head Light Bulb");
+        jCheckBox12.setText(" phares");
         jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox12ActionPerformed(evt);
             }
         });
 
-        jCheckBox13.setText("Spark Plug");
+        jCheckBox13.setText("bougie");
         jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox13ActionPerformed(evt);
             }
         });
 
-        jCheckBox14.setText("Belts");
+        jCheckBox14.setText("ceinture");
         jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox14ActionPerformed(evt);
@@ -371,10 +371,10 @@ public void dataStored()
         );
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("Category");
+        jLabel3.setText("Categorie");
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Servicing", "Mechanical job", "Denting Painting", "Extra", "Break down" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Select", "Service", "Mécanique", "Tole & peinture", "Autre", "Panne" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -382,27 +382,27 @@ public void dataStored()
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Which type of work:-");
+        jLabel2.setText("Type de travail:-");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
 
-        jCheckBox15.setText("Clutch");
+        jCheckBox15.setText("Embrayage");
 
         jCheckBox16.setText("Suspension");
 
-        jCheckBox17.setText("Shocker");
+        jCheckBox17.setText("Clé");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("Mechanical Parts");
+        jLabel4.setText("Mécanique");
 
-        jCheckBox18.setText("Engine over all");
+        jCheckBox18.setText("Moteur");
         jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox18ActionPerformed(evt);
             }
         });
 
-        jCheckBox20.setText(" Breaks");
+        jCheckBox20.setText(" Pannes");
         jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox20ActionPerformed(evt);
@@ -411,7 +411,7 @@ public void dataStored()
 
         jCheckBox21.setText("A/C");
 
-        jCheckBox22.setText("Electric");
+        jCheckBox22.setText("Electrique");
         jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox22ActionPerformed(evt);
@@ -458,13 +458,13 @@ public void dataStored()
 
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
 
-        jCheckBox19.setText("Rubber Polishing");
+        jCheckBox19.setText("caoutchouc");
 
-        jCheckBox23.setText("Anti rust coating");
+        jCheckBox23.setText("vernis anti-rouille");
 
         jLabel5.setBackground(new java.awt.Color(51, 255, 255));
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setText("Denting Parts");
+        jLabel5.setText("Bosselage des pièces");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -491,14 +491,14 @@ public void dataStored()
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
 
-        jCheckBox24.setText("Washing");
+        jCheckBox24.setText("Lavage");
         jCheckBox24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox24ActionPerformed(evt);
             }
         });
 
-        jCheckBox25.setText("Dry cleaning");
+        jCheckBox25.setText("Lavage à sec");
         jCheckBox25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox25ActionPerformed(evt);
@@ -506,7 +506,7 @@ public void dataStored()
         });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Extra Parts");
+        jLabel6.setText("Autre");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -531,7 +531,7 @@ public void dataStored()
         );
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Submit");
+        jButton1.setText("Envoyer");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -542,7 +542,7 @@ public void dataStored()
         jLabel7.setText("Model:-");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setText("Vehicle no:-");
+        jLabel8.setText("num voiture:-");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -568,7 +568,7 @@ public void dataStored()
         });
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setText("Category:-");
+        jLabel9.setText("Categorie:-");
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

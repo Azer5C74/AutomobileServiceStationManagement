@@ -1,4 +1,4 @@
- 
+ //traduction faite
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -19,7 +19,7 @@ public class VehicleReport extends javax.swing.JPanel {
     String d = null;
     int j;
     String data[][] = {};
-    String col[] = {"Vehicle no","Reg no","Name","Contact no","Category","Requirement","Location","kilometers","Year","Model","Date","Due Date"};
+    String col[] = {"Num véhicule","Num Registrement ","Nom","Num Contact","Category","Besoin","Localisation","kilometers","Année","Model","Date","Date d'échéance"};
     DefaultTableModel model = new DefaultTableModel(data, col);
     TableColumn column=null;
     Connection con=null;
@@ -35,7 +35,7 @@ public class VehicleReport extends javax.swing.JPanel {
     public VehicleReport() {
         initComponents();
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             //jButton1.setText(d);
     
@@ -102,11 +102,11 @@ public class VehicleReport extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Vehicle Report");
+        jLabel1.setText("Rapport Véhicule");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 255, 255)));
 
-        jButton3.setText("Print Report");
+        jButton3.setText("Imprimer Rapport");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -116,23 +116,23 @@ public class VehicleReport extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Date");
 
-        jButton2.setText("All Report");
+        jButton2.setText("Tout les rapports");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Today Report");
+        jButton1.setText("Rapport d'aujourd'hui");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Search Vehicle Number");
+        jLabel3.setText("Chercher num véhicule");
 
-        jButton4.setText("View");
+        jButton4.setText("Voir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -244,11 +244,11 @@ public class VehicleReport extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
-    	JOptionPane.showMessageDialog(null, "Printing report...");
+    	JOptionPane.showMessageDialog(null, "Impression du rapport...");
     	
 
-    	JOptionPane.showMessageDialog(null, "Error : Configure Printer First ");
-       System.out.println("Connect to Printer");
+    	JOptionPane.showMessageDialog(null, "Error : Configurer le rapport ");
+       System.out.println("Connecter à l'imprimante");
         
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -274,13 +274,13 @@ public class VehicleReport extends javax.swing.JPanel {
                 }
     
          if(!rs.first())
-        	 model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found",});
+        	 model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé",});
          else System.out.println(" theek ");
 
         
     }catch(Exception e){
     	     System.out.println("no such record");
-    	model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found",});
+    	model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé",});
         System.out.println(e.getMessage());
     }
         

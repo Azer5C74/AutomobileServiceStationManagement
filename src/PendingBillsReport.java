@@ -1,4 +1,4 @@
- 
+//traduction faite
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -35,7 +35,7 @@ public class PendingBillsReport extends javax.swing.JPanel {
     public PendingBillsReport() {
         initComponents();
             java.util.Date dnow= new java.util.Date();
-            SimpleDateFormat ft= new SimpleDateFormat("yyyy.MM.dd");
+            SimpleDateFormat ft= new SimpleDateFormat("yyyy/MM/dd");
             d=ft.format(dnow.getTime());
             //jButton1.setText(d);
     
@@ -221,11 +221,11 @@ public class PendingBillsReport extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
-    	JOptionPane.showMessageDialog(null, "Printing report...");
+    	JOptionPane.showMessageDialog(null, "Impression du rapport...");
 
 
-    	JOptionPane.showMessageDialog(null, "Error : Configure Printer First ");
-       System.out.println("Connect to Printer");
+    	JOptionPane.showMessageDialog(null, "Error : Configurer l'imprimante ");
+       System.out.println("Connecter l'imprimante");
         
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -251,13 +251,13 @@ public class PendingBillsReport extends javax.swing.JPanel {
                 }
     
          if(!rs.first())
-        	 model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found","kp","no record found",});
+        	 model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé","kp","aucun record trouvé",});
          else System.out.println(" theek ");
 
         
     }catch(Exception e){
     	     System.out.println("no such record");
-    	model.insertRow(jTable1.getRowCount(), new Object[]{"no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found","no record found",});
+    	model.insertRow(jTable1.getRowCount(), new Object[]{"aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé","aucun record trouvé",});
         System.out.println(e.getMessage());
     }
         
