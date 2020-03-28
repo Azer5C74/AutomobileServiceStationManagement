@@ -13,14 +13,14 @@ public class ConnectionProvider {
 	static {
 		try {
 			prop = new Properties();
-			prop.load(new FileInputStream("C:\\Users\\Amani\\Desktop\\2eme semestre\\AutomobileServiceStationManagement\\src\\db.properties"));
+			prop.load(new FileInputStream("C:\\Users\\Sheva-Laptop\\Desktop\\AutomobileServiceStationManagement\\src\\db.properties"));
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 	}
 
 	public static Connection getConnection() {
-		Connection con = null;
+	    Connection con = null;
 		try {
 
 			Class.forName(prop.getProperty("drivername"));

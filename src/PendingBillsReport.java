@@ -122,7 +122,7 @@ public class PendingBillsReport extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setText("Recherche par Matricule");
+        jLabel3.setText("Recherche par Num Véhicule");
 
         jButton4.setText("Voir");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
