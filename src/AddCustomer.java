@@ -1,9 +1,8 @@
 
+import javax.swing.*;
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JDesktopPane;
-import javax.swing.JOptionPane;
+
+import static java.awt.Frame.MAXIMIZED_HORIZ;
 
 public class AddCustomer extends javax.swing.JInternalFrame {
 
@@ -67,7 +66,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
         jPanel4 = new javax.swing.JPanel();
         tin = new javax.swing.JTextField();
         stex = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+
         jLabel9 = new javax.swing.JLabel();
         cst = new javax.swing.JTextField();
         tel = new javax.swing.JTextField();
@@ -361,11 +360,11 @@ public class AddCustomer extends javax.swing.JInternalFrame {
                 stexKeyReleased(evt);
             }
         });
-
-        jLabel8.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Num Tim du client");
-        jLabel8.setName("jLabel8"); // NOI18N
+//
+//        jLabel8.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+//        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+//        jLabel8.setText("Num Tim du client");
+//        jLabel8.setName("jLabel8"); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -413,7 +412,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
             }
         });
 
-        save.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        save.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         save.setText("Sauvegarder");
         save.setName("save"); // NOI18N
         save.addActionListener(new java.awt.event.ActionListener() {
@@ -443,7 +442,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(save, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(122, 122, 122)
+                .addGap(0, 0, MAXIMIZED_HORIZ)
                 .addComponent(btnEdit)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -477,9 +476,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
                             .addComponent(tel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cst, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(37, 37, 37)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLabel9))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(tin, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -496,7 +493,6 @@ public class AddCustomer extends javax.swing.JInternalFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(cst, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
                     .addComponent(tin, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -803,7 +799,7 @@ private void telFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_telF
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
+
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

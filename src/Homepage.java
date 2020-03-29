@@ -55,7 +55,7 @@ public class Homepage extends javax.swing.JFrame {
         btnBillings = new javax.swing.JButton();
         btnViewAllBills = new javax.swing.JButton();
         AddInventory = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        jpanel3ALL = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
 
@@ -255,21 +255,21 @@ public class Homepage extends javax.swing.JFrame {
                 .addComponent(jButton2))
         );
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 255));
+        jpanel3ALL.setBackground(new java.awt.Color(153, 153, 255));
 
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout jpanel3ALLLayout = new javax.swing.GroupLayout(jpanel3ALL);
+        jpanel3ALL.setLayout(jpanel3ALLLayout);
+        jpanel3ALLLayout.setHorizontalGroup(
+            jpanel3ALLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanel3ALLLayout.createSequentialGroup()
                 .addContainerGap(231, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(814, 814, 814))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        jpanel3ALLLayout.setVerticalGroup(
+            jpanel3ALLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanel3ALLLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2))
         );
@@ -282,7 +282,7 @@ public class Homepage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jpanel3ALL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(4, 4, 4))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -295,7 +295,7 @@ public class Homepage extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 35, Short.MAX_VALUE))
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jpanel3ALL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -304,84 +304,84 @@ public class Homepage extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         Vehicle vd=new Vehicle();
-        vd.setSize(jPanel3.getSize());
-        jPanel3.add(vd);
+        vd.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(vd);
         vd.setVisible(true);
             // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         VendorReport c=new VendorReport();
-        c.setSize(jPanel3.getSize());
-        jPanel3.add(c);
-        c.setVisible(true); 
+        c.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(c);
+        c.setVisible(true);
 // TODO add your handling code here:s
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
 
-     jPanel3.removeAll();
+     jpanel3ALL.removeAll();
      Vendor v=new Vendor();
-     v.setSize(jPanel3.getSize());
-     jPanel3.add(v);
+     v.setSize(jpanel3ALL.getSize());
+     jpanel3ALL.add(v);
      v.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-     jPanel3.removeAll();
+     jpanel3ALL.removeAll();
      VehicleReport vr=new VehicleReport();
-     vr.setSize(jPanel3.getSize());
-     jPanel3.add(vr);
+     vr.setSize(jpanel3ALL.getSize());
+     jpanel3ALL.add(vr);
      vr.setVisible(true);
-        
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         Category c = new Category();
-        c.setSize(jPanel3.getSize());
-        jPanel3.add(c);
+        c.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(c);
         c.setVisible(true);
-        
+
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         CategoryReport cr = new CategoryReport();
-        cr.setSize(jPanel3.getSize());
-        jPanel3.add(cr);
+        cr.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(cr);
         cr.setVisible(true);  // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
 
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         InventoryRecord pr = new InventoryRecord();
-        pr.setSize(jPanel3.getSize());
-        jPanel3.add(pr);
+        pr.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(pr);
         pr.setVisible(true);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void btnAddCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCustActionPerformed
- 
-        jPanel3.removeAll();
+
+        jpanel3ALL.removeAll();
         AddCustomer p = new AddCustomer();
-        p.setSize(jPanel3.getSize());
-        jPanel3.add(p);
+        p.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(p);
         p.setVisible(true);
 
 
-        
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAddCustActionPerformed
 
@@ -394,39 +394,39 @@ public class Homepage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnBillingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBillingsActionPerformed
-      
-          jPanel3.removeAll();
+
+          jpanel3ALL.removeAll();
      BILLING vr=new BILLING();
-     vr.setSize(jPanel3.getSize());
-     jPanel3.add(vr);
+     vr.setSize(jpanel3ALL.getSize());
+     jpanel3ALL.add(vr);
      vr.setVisible(true);
-     
+
     }//GEN-LAST:event_btnBillingsActionPerformed
 
     private void AddInventoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddInventoryActionPerformed
-     
-        jPanel3.removeAll();
+
+        jpanel3ALL.removeAll();
         InventoryAdd p = new InventoryAdd();
-        p.setSize(jPanel3.getSize());
-        jPanel3.add(p);
+        p.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(p);
         p.setVisible(true);
     }//GEN-LAST:event_AddInventoryActionPerformed
 
     private void btnPendingbillsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPendingbillsActionPerformed
 
-        jPanel3.removeAll();
+        jpanel3ALL.removeAll();
         PendingBillsReport vr=new PendingBillsReport();
-        vr.setSize(jPanel3.getSize());
-        jPanel3.add(vr);
+        vr.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(vr);
         vr.setVisible(true);
 
     }//GEN-LAST:event_btnPendingbillsActionPerformed
 
     private void btnViewAllBillsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewAllBillsActionPerformed
-         jPanel3.removeAll();
+         jpanel3ALL.removeAll();
         AllBills vr=new AllBills();
-        vr.setSize(jPanel3.getSize());
-        jPanel3.add(vr);
+        vr.setSize(jpanel3ALL.getSize());
+        jpanel3ALL.add(vr);
         vr.setVisible(true);
     }//GEN-LAST:event_btnViewAllBillsActionPerformed
 
@@ -437,7 +437,7 @@ public class Homepage extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -483,7 +483,7 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    public static javax.swing.JPanel jpanel3ALL;
 
 
     // End of variables declaration//GEN-END:variables
