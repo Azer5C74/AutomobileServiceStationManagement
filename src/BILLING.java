@@ -106,9 +106,11 @@ public class BILLING extends javax.swing.JInternalFrame {
                 }
             } catch (Exception ex) {
                 System.out.println("Error "+ex.toString());
+                ex.printStackTrace();
             }
 
         } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -790,10 +792,12 @@ public class BILLING extends javax.swing.JInternalFrame {
         //    jPanel3.paint(Graphics2D);
             Homepage.jpanel3ALL.paint(graphics2D);
             try {
-                ImageIO.write(imagebuf, "pdf", new File("Facture"+cstno+"_"+cno+".pdf"));
+                ImageIO.write(imagebuf, "jpeg", new File("Facture.jpeg"));
+                JOptionPane.showMessageDialog(null,"Facture généré avec succés !");
+                JOptionPane.showMessageDialog(null,"Veuillez configurer votre imprimante !!");
             } catch (Exception e) {
                 // TODO Auto-generated catch block
-                System.out.println("error");
+            e.printStackTrace();
             }
     }
 
@@ -969,7 +973,7 @@ public class BILLING extends javax.swing.JInternalFrame {
             con.close();
             con = ConnectionProvider.getConnection();
         } catch (Exception ex) {
-            System.out.print("error" + ex);
+                ex.printStackTrace();
         }
 
     }//GEN-LAST:event_saveActionPerformed
@@ -1046,6 +1050,7 @@ public class BILLING extends javax.swing.JInternalFrame {
 
         } catch (Exception ex) {
             System.out.println("Error = " + ex);
+            ex.printStackTrace();
         }
     }//GEN-LAST:event_addActionPerformed
 
@@ -1085,6 +1090,7 @@ public class BILLING extends javax.swing.JInternalFrame {
             sc.setModel(new javax.swing.table.DefaultTableModel(data, header));
         } catch (Exception ex) {
             System.out.println("Error "+ex.toString());
+            ex.printStackTrace();
         }
 
 
@@ -1099,6 +1105,7 @@ public class BILLING extends javax.swing.JInternalFrame {
 
         } catch (Exception ex) {
             System.out.println("Error"+ex.toString());
+            ex.printStackTrace();
         }
 
 
