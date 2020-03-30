@@ -10,5 +10,7 @@
     <orderEntry type="library" name="mysql-connector-java-8.0.19" level="project" />
     <orderEntry type="library" name="itextpdf-5.5.13.1" level="project" />
     <orderEntry type="library" name="com.lowagie.text-2.1.7" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
   </component>
 </module>

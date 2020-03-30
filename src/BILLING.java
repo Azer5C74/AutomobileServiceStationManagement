@@ -1,5 +1,12 @@
-
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.imageio.ImageIO;
+import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -9,9 +16,11 @@ import java.io.File;
 import java.sql.*;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 public class BILLING extends javax.swing.JInternalFrame {
 
@@ -30,7 +39,6 @@ public class BILLING extends javax.swing.JInternalFrame {
     PreparedStatement pst = null;
     Statement st = null, stDelete = null;
     ResultSet rs = null;
-
     ScrollPane s;
     int i_no = 0;
 
@@ -217,7 +225,7 @@ public class BILLING extends javax.swing.JInternalFrame {
         jLabel6.setName("jLabel6"); // NOI18N
 
         cstno.setBackground(new java.awt.Color(255, 255, 204));
-        cstno.setName("cstno"); // NOI18N
+        cstno.setName("Email"); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel7.setText("CIN");
@@ -542,11 +550,13 @@ public class BILLING extends javax.swing.JInternalFrame {
         });
 
         jButton6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton6.setText("Quitter");
+        jButton6.setText("Envoyer Par Mail");
         jButton6.setName("jButton6"); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+        jButton6.addActionListener(new java.awt.event.ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jButton6ActionPerformed(e);
+
             }
         });
 
@@ -559,18 +569,19 @@ public class BILLING extends javax.swing.JInternalFrame {
             }
         });
 
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
                 jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(remove)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
-                                                .addGap(77, 77, 77)
+                                                .addGap(0, 0, 0)
                                                 .addComponent(save)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(jButton5)
                                                 .addGap(18, 18, 18)
                                                 .addComponent(jButton7)
@@ -599,24 +610,26 @@ public class BILLING extends javax.swing.JInternalFrame {
                 jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel20)
-                                        .addComponent(remove)
+                                .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel3Layout.createSequentialGroup()).
+                                                addGap(10,10,10)
+                                        .addComponent(jLabel20).
+                                        addGap(10,10,10).addComponent(remove)
+
                                         .addComponent(subtotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addGroup(jPanel3Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                                         .addComponent(tp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addComponent(jLabel21)
                                                         .addComponent(tax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                         .addComponent(total2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addComponent(jLabel23)))
                                         .addGroup(jPanel3Layout.createSequentialGroup()
-                                                .addGap(24, 24, 24)
+                                                .addGap(10, 10, 30)
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                                         .addComponent(save)
                                                         .addComponent(jButton5)
@@ -792,7 +805,9 @@ public class BILLING extends javax.swing.JInternalFrame {
         //    jPanel3.paint(Graphics2D);
             Homepage.jpanel3ALL.paint(graphics2D);
             try {
+
                 ImageIO.write(imagebuf, "jpeg", new File("Facture.jpeg"));
+
                 JOptionPane.showMessageDialog(null,"Facture généré avec succés !");
                 JOptionPane.showMessageDialog(null,"Veuillez configurer votre imprimante !!");
             } catch (Exception e) {
@@ -801,6 +816,82 @@ public class BILLING extends javax.swing.JInternalFrame {
             }
     }
 
+    private void jButton6ActionPerformed(ActionEvent e){
+        try{
+            File f = new File("Facture.jpeg");
+            System.out.println(System.getProperty("user.dir"));
+            if(f.exists()) {
+                String Email =cstno.getText() ;
+                String emailSubject="Votre Facture";
+                String emailMessage ="Services Auto vous envoie une copie numérique de votre facture." ;
+                  //      String to = Email;
+                        String to="amani.miled@issatso.u-sousse.tn";
+                        final String from ="remremrem20192019@gmail.com";
+                        final String password="Kalinethunter10";
+
+
+                        Properties props = new Properties();
+                        props.setProperty("mail.transport.protocol", "smtp");
+                        props.setProperty("mail.host", "smtp.gmail.com");
+                        props.put("mail.smtp.auth", "true");
+                        props.put("mail.smtp.port", "587");
+                        props.put("mail.debug", "true");
+                        props.put("mail.smtp.socketFactory.port", "465");
+                        props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+                        props.put("mail.smtp.socketFactory.fallback", "false");
+                        Session session = Session.getDefaultInstance(props,
+                                new javax.mail.Authenticator() {
+                                    @Override
+                                    protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
+                                        return new PasswordAuthentication(from, password);
+                                    }
+                                });
+
+
+                        try {
+                            // Create a default MimeMessage object.
+                            MimeMessage message = new MimeMessage(session);
+
+                            // Set From: header field of the header.
+                            message.setFrom(new InternetAddress(from));
+
+                            // Set To: header field of the header.
+                            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+
+                            // Set Subject: header field
+                            message.setSubject(emailSubject);
+
+                            // Now set the actual message
+                            message.setText(emailMessage);
+
+                            Multipart multipart = new MimeMultipart();
+                            BodyPart messageBodyPart = new MimeBodyPart();
+                            // Set text message part
+                            multipart.addBodyPart(messageBodyPart);
+
+                            // Part two is attachment
+                            String filename = "Facture.jpeg";
+                            DataSource source = new FileDataSource(filename);
+                            messageBodyPart.setDataHandler(new DataHandler(source));
+                            messageBodyPart.setFileName(filename);
+                            multipart.addBodyPart(messageBodyPart);
+
+                            // Send the complete message parts
+                            message.setContent(multipart);
+                            // Send message
+                            Transport.send(message);
+                            JOptionPane.showMessageDialog(null,"Envoyé avec Succés au client.");
+
+
+                        } catch (MessagingException mex) {
+                            mex.printStackTrace();
+                        }
+                    }
+            }
+        catch (Exception e1){
+            e1.printStackTrace();
+        }
+    }
     private void bnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnActionPerformed
 // TODO add your handling code here:
     }//GEN-LAST:event_bnActionPerformed
@@ -978,9 +1069,6 @@ public class BILLING extends javax.swing.JInternalFrame {
 
     }//GEN-LAST:event_saveActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
 
     private void billtoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_billtoMouseClicked
 
